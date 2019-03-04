@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API-capstone</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="bg-modal">
+        <div class="modal-contents">
+            <div class="close">+</div>
+            <h2 class="trackName"></h2>
+            <h3 class="artistName"></h3>
+            <pre class="lyrics"></pre>
+        </div>
+    </div>
+
+    <header role="header">
+        <h1>Going to a concert? <span>Learn the lryics to your artist top songs</span><span>Get ready to sing along</span></h1>
+    </header>
+
+    <main role="main" class="container">
+
+
+        <div class="wrap">
+            <form class="search" role="search">
+                <input type="text" class="searchTerm" placeholder="What artist are you looking for?">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <p id="js-error-message" class="error-message"></p>
+
+        <section id="results" class="hidden" role="region">
+            <h2>Top Songs</h2>
+            <ul id="cards" role="list"></ul>
+        </section>
+
+
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
