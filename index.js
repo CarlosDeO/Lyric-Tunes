@@ -57,7 +57,7 @@ function getSongsInfo() {
             track: `${encodeURIComponent(STORE.songs[i])}`
         };
         const queryString = formatQueryParams(params);
-        const url = 'http://ws.audioscrobbler.com/2.0/' + '?' + queryString
+        const url = 'https://ws.audioscrobbler.com/2.0/' + '?' + queryString
 
         fetch(url)
             .then(response => response.json())
@@ -113,7 +113,7 @@ function getArtistTopSongs(artist) {
         artist: `${encodeURIComponent(artist)}`,
     };
     const queryString = formatQueryParams(params)
-    const url = 'http://ws.audioscrobbler.com/2.0/' + '?' + queryString;
+    const url = 'https://ws.audioscrobbler.com/2.0/' + '?' + queryString;
     console.log(url);
 
     fetch(url)
